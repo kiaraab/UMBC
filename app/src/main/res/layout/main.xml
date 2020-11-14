@@ -6,52 +6,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/bottom_panel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="671dp">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/homeBar"
-            android:layout_width="132dp"
-            android:layout_height="57dp"
-            android:background="#474747"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/homeBar"
+        android:layout_width="137dp"
+        android:layout_height="57dp"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/calendarBar"
-            android:layout_width="143dp"
-            android:layout_height="57dp"
-            android:background="#474747"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.53"
-            app:layout_constraintStart_toStartOf="parent" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/calendarBar"
+        android:layout_width="143dp"
+        android:layout_height="57dp"
+        android:background="#DA627D"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/userIcon"
-            android:layout_width="132dp"
-            android:layout_height="57dp"
-            android:background="#474747"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.53"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </LinearLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/userIcon"
+        android:layout_width="134dp"
+        android:layout_height="58dp"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <View
         android:id="@+id/myRectangleView"
@@ -75,11 +65,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="91dp"
-        android:layout_height="90dp"
+        android:layout_width="52dp"
+        android:layout_height="53dp"
+        android:background="@android:color/transparent"
         app:srcCompat="@drawable/addition"
-        tools:layout_editor_absoluteX="321dp"
-        tools:layout_editor_absoluteY="574dp" />
+        tools:layout_editor_absoluteX="359dp"
+        tools:layout_editor_absoluteY="608dp" />
 
     <TextView
         android:id="@+id/groupName"
@@ -90,7 +81,58 @@
         android:paddingRight="10"
         android:text="Group Name"
         android:textSize="15"
-        tools:layout_editor_absoluteX="153dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/homeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/karla_bold"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/calendarText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/calendarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/karla_bold"
+        android:text="Calendar"
+        android:textColor="#CF4A6A"
+        app:layout_constraintBottom_toBottomOf="@+id/userIcon"
+        app:layout_constraintStart_toEndOf="@+id/homeText" />
+
+    <TextView
+        android:id="@+id/settingsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/karla_bold"
+        android:text="Settings"
+        android:textColor="#CF4A6A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/homeBar"
+        app:layout_constraintStart_toEndOf="@+id/calendarText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#C23257"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="669dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
