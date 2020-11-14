@@ -1,68 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#DA627D">
 
-    <TextView
-        android:id="@+id/eventTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="62dp" />
+    <View
+        android:id="@+id/logInBox"
+        android:layout_width="355dp"
+        android:layout_height="389dp"
+        android:background="@drawable/rectanglev2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="190dp">
 
-    <TextView
-        android:id="@+id/timeInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="131dp" />
+    <View
+        android:id="@+id/whiteblob"
+        android:layout_width="235dp"
+        android:layout_height="216dp"
+        android:background="@drawable/whiteblob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-34dp">
 
-    <TextView
-        android:id="@+id/locationInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="225dp" />
-
-    <TextView
-        android:id="@+id/groupEvent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="297dp" />
+    <View
+        android:id="@+id/whiteblob1"
+        android:layout_width="321dp"
+        android:layout_height="196dp"
+        android:background="@drawable/whiteblob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-62dp">
 
     <EditText
-        android:id="@+id/event"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
         android:ems="10"
+        android:fontFamily="@font/karla_bold"
         android:inputType="textPersonName"
-        android:text="Enter Event Name"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="75dp" />
-
-    <EditText
-        android:id="@+id/startTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="time"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="207dp" />
-
-    <Button
-        android:id="@+id/submitButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        tools:layout_editor_absoluteX="264dp"
-        tools:layout_editor_absoluteY="640dp" />
+        android:shadowColor="#6A8F9A"
+        android:text="Description"
+        android:textColor="#6A8F9A"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="279dp" />
 
     <EditText
         android:id="@+id/startDate"
@@ -70,8 +56,76 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="date"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="140dp" />
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karla_bold"
+        android:text="Location:"
+        android:textColor="#50808E"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/karla_bold"
+        android:text="From"
+        android:textColor="#50808E"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/startDate"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karla_bold"
+        android:text="To"
+        android:textColor="#50808E"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:backgroundTint="#406D7C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="494dp" />
+
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="209dp"
+        android:layout_height="31dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="439dp" />
+
+    <EditText
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="336dp" />
 
     <EditText
         android:id="@+id/endDate"
@@ -79,8 +133,23 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="date"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="305dp" />
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <EditText
+        android:id="@+id/event"
+        android:layout_width="320dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:fontFamily="@font/karla_bold"
+        android:inputType="textPersonName"
+        android:shadowColor="#FFFFFF"
+        android:text="Event Title"
+        android:textColor="#50808E"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="215dp" />
 
     <EditText
         android:id="@+id/endTime"
@@ -88,16 +157,18 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="time"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="393dp" />
+        android:textSize="10"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="387dp" />
 
-    <EditText
-        android:id="@+id/location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPostalAddress"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="498dp" />
+    <View
+        android:id="@+id/bottomBlob"
+        android:layout_width="277dp"
+        android:layout_height="135dp"
+        android:background="@drawable/blob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="595dp">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
