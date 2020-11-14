@@ -14,15 +14,6 @@
         tools:layout_editor_absoluteY="62dp" />
 
     <TextView
-        android:id="@+id/pickADay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pick A Day:"
-        android:textSize="20"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="146dp" />
-
-    <TextView
         android:id="@+id/timeInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,29 +47,14 @@
         tools:layout_editor_absoluteX="32dp"
         tools:layout_editor_absoluteY="75dp" />
 
-    <CalendarView
-        android:id="@+id/calendarView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="173dp" />
-
     <EditText
-        android:id="@+id/editTextTime"
+        android:id="@+id/startTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="time"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="536dp" />
-
-    <TextView
-        android:id="@+id/time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Time:"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="552dp" />
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="207dp" />
 
     <Button
         android:id="@+id/submitButton"
@@ -87,5 +63,41 @@
         android:text="Submit"
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="640dp" />
+
+    <EditText
+        android:id="@+id/startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <EditText
+        android:id="@+id/endDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="305dp" />
+
+    <EditText
+        android:id="@+id/endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="498dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
