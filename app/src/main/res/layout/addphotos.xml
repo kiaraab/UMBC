@@ -12,14 +12,16 @@
         android:text="Event:"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="126dp" />
+        tools:layout_editor_absoluteY="126dp"
+        tools:ignore="MissingConstraints" />
 
     <Spinner
         android:id="@+id/dropDown"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="173dp" />
+        tools:layout_editor_absoluteY="173dp"
+        tools:ignore="MissingConstraints"/>
 
     <Button
         android:id="@+id/submitButton2"
@@ -27,6 +29,7 @@
         android:layout_height="wrap_content"
         android:text="Submit"
         tools:layout_editor_absoluteX="292dp"
-        tools:layout_editor_absoluteY="645dp" />
+        tools:layout_editor_absoluteY="645dp"
+        tools:ignore="MissingConstraints"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
