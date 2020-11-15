@@ -14,7 +14,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="107dp">
+        tools:layout_editor_absoluteY="107dp"
+        tools:ignore="MissingConstraints"/>
 
     <View
             android:id="@+id/bottomBox"
@@ -33,7 +34,8 @@
         android:layout_width="414dp"
         android:layout_height="423dp"
         android:background="@drawable/toplogin"
-        tools:layout_editor_absoluteY="-2dp">
+        tools:layout_editor_absoluteY="-2dp"
+        tools:ignore="MissingConstraints"/>
 
     <Button
         android:id="@+id/backButton"
@@ -44,7 +46,8 @@
         android:textColor="#406D7C"
         app:backgroundTint="#FFFFFF"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/descOfEvent"
@@ -53,7 +56,8 @@
         android:text="Description of Event Here"
         android:textColor="#FFFFFF"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="198dp" />
+        tools:layout_editor_absoluteY="198dp"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/textView8"
@@ -64,7 +68,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="107dp">
+        tools:layout_editor_absoluteY="107dp"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/dateInput"
@@ -74,5 +79,6 @@
         android:text="Date ~ Time of Event"
         android:textColor="@color/white"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="174dp" />
+        tools:layout_editor_absoluteY="174dp"
+        tools:ignore="MissingConstraints"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
