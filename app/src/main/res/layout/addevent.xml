@@ -14,7 +14,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="190dp">
+        tools:layout_editor_absoluteY="190dp"
+        tools:ignore="MissingConstraints"/>
 
     <View
         android:id="@+id/whiteblob"
@@ -24,7 +25,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="-34dp">
+        tools:layout_editor_absoluteY="-34dp"
+        tools:ignore="MissingConstraints"/>
 
     <View
         android:id="@+id/whiteblob1"
@@ -34,7 +36,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="-62dp">
+        tools:layout_editor_absoluteY="-62dp"
+        tools:ignore="MissingConstraints"/>
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -48,7 +51,8 @@
         android:textColor="#6A8F9A"
         android:textSize="10dp"
         tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="279dp" />
+        tools:layout_editor_absoluteY="279dp"
+        tools:ignore="MissingConstraints"/>
 
     <EditText
         android:id="@+id/startDate"
@@ -58,7 +62,8 @@
         android:inputType="date"
         android:textSize="10dp"
         tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="336dp" />
+        tools:layout_editor_absoluteY="336dp"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/textView6"
@@ -69,7 +74,8 @@
         android:textColor="#50808E"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="446dp" />
+        tools:layout_editor_absoluteY="446dp"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -82,7 +88,8 @@
         android:textColor="#50808E"
         android:textSize="20dp"
         app:layout_constraintEnd_toStartOf="@+id/startDate"
-        tools:layout_editor_absoluteY="336dp" />
+        tools:layout_editor_absoluteY="336dp"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/textView5"
@@ -93,7 +100,8 @@
         android:textColor="#50808E"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="387dp" />
+        tools:layout_editor_absoluteY="387dp"
+        tools:ignore="MissingConstraints"/>
 
     <Button
         android:id="@+id/submitButton"
@@ -104,7 +112,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="494dp" />
+        tools:layout_editor_absoluteY="494dp"
+        tools:ignore="MissingConstraints"/>
 
 
     <EditText
@@ -115,7 +124,8 @@
         android:inputType="textPostalAddress"
         android:textSize="10dp"
         tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="439dp" />
+        tools:layout_editor_absoluteY="439dp"
+        tools:ignore="MissingConstraints"/>
 
     <EditText
         android:id="@+id/startTime"
@@ -125,7 +135,8 @@
         android:inputType="time"
         android:textSize="10dp"
         tools:layout_editor_absoluteX="256dp"
-        tools:layout_editor_absoluteY="336dp" />
+        tools:layout_editor_absoluteY="336dp"
+        tools:ignore="MissingConstraints"/>
 
     <EditText
         android:id="@+id/endDate"
@@ -135,7 +146,8 @@
         android:inputType="date"
         android:textSize="10dp"
         tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="387dp" />
+        tools:layout_editor_absoluteY="387dp"
+        tools:ignore="MissingConstraints"/>
 
     <EditText
         android:id="@+id/event"
@@ -149,7 +161,8 @@
         android:textColor="#50808E"
         android:textSize="30dp"
         tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="215dp" />
+        tools:layout_editor_absoluteY="215dp"
+        tools:ignore="MissingConstraints"/>
 
     <EditText
         android:id="@+id/endTime"
@@ -157,9 +170,10 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="time"
-        android:textSize="10"
+        android:textSize="10dp"
         tools:layout_editor_absoluteX="256dp"
-        tools:layout_editor_absoluteY="387dp" />
+        tools:layout_editor_absoluteY="387dp"
+        tools:ignore="MissingConstraints"/>
 
     <View
         android:id="@+id/bottomBlob"
@@ -169,6 +183,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="595dp">
+        tools:layout_editor_absoluteY="595dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
