@@ -61,7 +61,8 @@
         android:textColor="#FFFFFF"
         android:textSize="30dp"
         tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="111dp" />
+        tools:layout_editor_absoluteY="111dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -70,20 +71,22 @@
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/addition"
         tools:layout_editor_absoluteX="359dp"
-        tools:layout_editor_absoluteY="608dp" />
+        tools:layout_editor_absoluteY="608dp"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/groupName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rectanglev2"
-        android:paddingLeft="10"
-        android:paddingRight="10"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:text="Group Name"
-        android:textSize="15"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/homeText"
@@ -133,6 +136,7 @@
         android:layout_height="5dp"
         android:background="#C23257"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="669dp" />
+        tools:layout_editor_absoluteY="669dp"
+        tools:ignore="MissingConstraints"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
